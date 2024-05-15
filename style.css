@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+.background {
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.foreground {
+    transform: translateZ(-10px)scale(2.5);
+}
+
+.container h1 {
+    position: absolute;
+    color: white;
+    font-size: 10vw;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    top: 5rem;
+    left: 16%;
+
+}
+
+section {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 120px 0;
+}
+
+.secheading {
+    font-size: 8vw;
+    padding: 0 0 10vh 10vh;
+}
+
+.text {
+    font-size: 1.8vw;
+    padding: 0 14vw;
+    background-color: rgb(45, 45, 45);
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 1200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1A {
+    background-image: url(mandir1.jpg);
+}
+
+.bg1B {
+    background-image: url(raghu-nayyar-dskdujAQU44-unsplash.jpg);
+}
+
+.bg1C {
+    background-image: url(mandir2.jpg);
+}
+
+.bg2A {
+    background-image: url(hawa1.jpg);
+}
+
+.bg2B {
+    background-image: url(jodhpur1.jpg);
+}
+
+.bg2C {
+    background-image: url(tiago-rosado-mwV6PsB-7Bk-unsplash.jpg);
+}
+
+.bg3A {
+    background-image: url(pritam-das-biswas-rPg0m6pwPQY-unsplash.jpg);
+}
+
+.bg3B {
+    background-image: url(kanishka-jeewantha-d8s61vqhvuk-unsplash.jpg);
+}
+
+.discription {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    color: black;
+}
